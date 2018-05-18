@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    android:visibility="visible"
+    app:layout_collapseMode="none"
+    app:layout_collapseParallaxMultiplier="0.8"
+    app:layout_scrollFlags="scroll"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.98"
+                android:gravity="bottom"
+                android:text="방이름" />
+
+
+            <EditText
+                android:id="@+id/roomName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="센서가 설치된 방의 이름을 적어주세요" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="센서 아이피"></TextView>
+
+            <EditText
+                android:id="@+id/roomIp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="센서의 아이피 주소를 적어주세요" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:gravity="bottom"
+                android:text="센서 종류" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="38dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/modifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRegisterButton"
+        android:text="수정" />
+
+    <Button
+        android:id="@+id/delButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRegisterButton"
+        android:text="방 삭제" />
+
+</LinearLayout>

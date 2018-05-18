@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:weightSum="1">
+
+        <TextView android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="방이름"
+            android:gravity="bottom"
+            android:layout_weight="0.98"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="센서가 설치된 방의 이름을 적어주세요"
+            android:id="@+id/roomName"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="센서 아이피">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="센서의 아이피 주소를 적어주세요"
+            android:id="@+id/roomIp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="센서 종류"
+            android:gravity="bottom"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:id="@+id/spinner"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록하기"
+        android:id="@+id/registerButton"
+        android:onClick="onClickRegisterButton"/>
+</LinearLayout>

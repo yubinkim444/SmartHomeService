@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/roomicon02"
+            android:title="방" />
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/dataicon01"
+            android:title="데이터" />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/timelineicon01"
+            android:title="타임라인" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/settingsicon01"
+            android:title="설정" />
+    </group>
+
+    <item android:title="커뮤니케이션">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="공유" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="보내기" />
+        </menu>
+    </item>
+
+</menu>

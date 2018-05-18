@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items">
+        <item>냉방기</item>
+        <item>난방기</item>
+        <item>가습기</item>
+        <item>제습기</item>
+        <item>조명</item>
+        <item>움직임 감지</item>
+    </string-array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:name="http://schemas.android.com/apk/res-auto"
+    package="com.example.dyk.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name=".MainActivity"
+
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+         <activity android:name=".SignUpActivity"
+
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".IntroActivity"
+
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".ForgotPassActivity"
+
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+    <activity android:name=".AddRoomActivity"
+
+        android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".OptimumSetting"
+
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+<service android:name=".AnalysisData"/>
+        <service android:name=".AutoOptimumSendService"/>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest>
